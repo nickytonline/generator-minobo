@@ -33,6 +33,11 @@
       "git add"
     ]
   },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all",
+    "printWidth": 80
+  },
   "jest": {
     "moduleFileExtensions": [
       "json",
@@ -53,13 +58,15 @@
     "babel-jest": "20.0.3",
     "babel-loader": "7.1.2",
     "babel-preset-env": "1.6.0",
-    "eslint": "4.5.0",
-    "eslint-config-prettier": "2.3.0",
+    "eslint": "3.17.1",
+    "eslint-config-prettier": "2.9.0",
     "husky": "0.14.3",
     "jest": "20.0.4",
-    "lint-staged": "4.0.4",
-    "prettier": "1.6.1",
+    "lint-staged": "6.0.1",
+    "nodemon": "1.14.11",
+    "prettier": "1.10.2",
     "rimraf": "2.6.1",
     "webpack": "3.5.5"
-  }
+  },
+  "dependencies": {}
 }
