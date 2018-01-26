@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Nick Taylor",
+      "authorEmail": "nick@iamdeveloper.com",
+      "authorUrl": "https://www.iamdeveloper.com"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "name": "<%= name %>",
+  "version": "<%= version %>",
+  "description": "<%= description %>",
+  "main": "src/index.js",
+  "author": "<%= author %>",
+  "license": "<%= license %>",
+  "engines": {
+    "node": ">=7.6"
+  },
+  "keywords": [],
+  "scripts": {
+    "start": "src/index.js",
+    "test": "jest",
+    "test:watch": "npm run test -- --watch",
+    "test:coverage": "npm run test -- --coverage",
+    "precommit": "lint-staged && npm test",
+    "pretty": "prettier --write"
+  },
+  "lint-staged": {
+    "*.js": ["npm run pretty", "eslint --fix", "git add"],
+    "*.json": ["npm run pretty", "git add"]
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all",
+    "printWidth": 80
+  },
+  "jest": {
+    "moduleFileExtensions": ["json", "js"],
+    "testRegex": "/__tests__/.*\\.spec\\.js$",
+    "testEnvironment": "node",
+    "collectCoverageFrom": ["src/**/*.js"]
+  },
+  "devDependencies": {
+    "eslint": "3.17.1",
+    "eslint-config-defaults": "9.0.0",
+    "eslint-config-prettier": "2.9.0",
+    "husky": "0.14.3",
+    "jest": "22.1.4",
+    "lint-staged": "6.0.1",
+    "nodemon": "1.14.11",
+    "prettier": "1.10.2"
+  },
+  "dependencies": {}
+}

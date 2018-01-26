@@ -1,12 +1,36 @@
-# MiNoBo
+# generator-minobo [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
+> A mini opinionated node boilerplate.
 
-A mini opinionated node boilerplate.
+## Installation
 
-To get up and running:
+First, install [Yeoman](http://yeoman.io) and generator-minobo using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
 
-* `yarn start` or `npm start` to run.
-* `yarn test` or `npm test` to run tests.
-* `yarn test:watch` or `npm test:watch` to write tests while developing.
-* `yarn test:coverage` or `npm test:coverage` to run test coverage.
+```bash
+npm install -g yo
+npm install -g generator-minobo
+```
 
-Note: if you've already installed the husky package at least once (used for precommit npm script), you will need to run `yarn --force` or `npm install --no-cache`. For some reason the post-install script of husky does not run, when the package is pulled from yarn's or npm's cache.
+Then generate your new project:
+
+```bash
+yo minobo
+```
+
+## Getting To Know Yeoman
+
+ * Yeoman has a heart of gold.
+ * Yeoman is a person with feelings and opinions, but is very easy to work with.
+ * Yeoman can be too opinionated at times but is easily convinced not to be.
+ * Feel free to [learn more about Yeoman](http://yeoman.io/).
+
+## License
+
+MIT © [Nick Taylor](https://www.iamdeveloper.com)
+
+
+[npm-image]: https://badge.fury.io/js/generator-minobo.svg
+[npm-url]: https://npmjs.org/package/generator-minobo
+[travis-image]: https://travis-ci.org/nickytonline/generator-minobo.svg?branch=master
+[travis-url]: https://travis-ci.org/nickytonline/generator-minobo
+[daviddm-image]: https://david-dm.org/nickytonline/generator-minobo.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/nickytonline/generator-minobo
