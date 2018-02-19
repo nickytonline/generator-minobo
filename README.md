@@ -1,5 +1,7 @@
 # generator-minobo [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/nickytonline/generator-minobo.svg)](https://greenkeeper.io/)
+
 > A mini opinionated node boilerplate. It ships with prettier and eslint (defaults config) and is setup for ES2017. It uses [Jest](https://www.npmjs.com/package/jest) for tests. It also, comes with a [Visual Studio Code](https://code.visualstudio.com/download) debug setup and recommended extensions to install for Visual Studio Code.
 
 ## Installation
