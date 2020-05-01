@@ -8,12 +8,18 @@
     "email": "nick@iamdeveloper.com",
     "url": "https://www.iamdeveloper.com"
   },
-  "files": ["generators"],
+  "files": [
+    "generators"
+  ],
   "main": "generators/index.js",
   "engines": {
     "node": ">=7.6"
   },
-  "keywords": ["boilerplate", "node", "yeoman-generator"],
+  "keywords": [
+    "boilerplate",
+    "node",
+    "yeoman-generator"
+  ],
   "devDependencies": {
     "yeoman-test": "^1.7.0",
     "yeoman-assert": "^3.1.0",
@@ -30,23 +36,34 @@
   "dependencies": {
     "yeoman-generator": "^2.0.1",
     "chalk": "^2.1.0",
-    "yosay": "^2.0.1"
+    "yosay": "^2.0.1",
+    "snyk": "^1.316.1"
   },
   "jest": {
     "testEnvironment": "node"
   },
   "scripts": {
-    "prepublish": "nsp check",
+    "prepublish": "npm run snyk-protect && nsp check",
     "pretest": "eslint .",
     "precommit": "lint-staged",
-    "test": "jest"
+    "test": "jest",
+    "snyk-protect": "snyk protect"
   },
   "lint-staged": {
-    "*.js": ["eslint --fix", "git add"],
-    "*.json": ["prettier --write", "git add"]
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.json": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "eslintConfig": {
-    "extends": ["xo", "prettier"],
+    "extends": [
+      "xo",
+      "prettier"
+    ],
     "env": {
       "jest": true,
       "node": true
@@ -60,11 +77,14 @@
         }
       ]
     },
-    "plugins": ["prettier"]
+    "plugins": [
+      "prettier"
+    ]
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nickytonline/generator-minobo.git"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "snyk": true
 }
